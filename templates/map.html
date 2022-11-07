@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+<link href="{% static 'css/style.css'%}" rel="stylesheet"/>
+        <html>
+
+           <head>
+              <title>Carte NeuronFood</title>
+              <center><h1>Carte des points de récolte alimentaire</h1></center>
+              <div class="col-lg-5 col-md-6">
+               <div class="slider_detail-box">
+                 <div class="btn-box" >
+                   <a href="index.html" class="btn-1" >
+                     Retour à l'accueil
+                   </a>
+                 </div>
+               </div>
+             </div>
+
+           </head>
+
+
+           <body>
+
+              <center><div id = "map" style = "width: 900px; height: 580px" ></div></center>
+              <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+              <script>
+                 // Creating map options
+                 var mapOptions = {
+                    center: [45.77345, 3.083183],
+                    zoom: 15
+                 }
+                 
+                 // Creating a map object
+                 var map = new L.map('map', mapOptions);
+                 
+                 // Creating a Layer object
+                 var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+                 
+                 // Adding layer to the map
+                 map.addLayer(layer);
+
+                 let marker = new L.Marker([45.770416,3.087174]);
+                marker.addTo(map);
+                marker.bindPopup("Nom du producteur : CROUS Clermont <br>Quantité de nourriture : Plus de 100 kgs </br> <br>Distance : Moins de 2 kms<br/>").openPopup();
+
+                let marker2 = new L.Marker([45.775323,3.092281]);
+                marker2.addTo(map);
+                marker2.bindPopup("Nom du producteur : Ecole Fenelon <br>Quantité de nourriture : Moins de 100 kgs </br> <br>Distance : 3 kms<br/>").openPopup();
+
+                let marker3 = new L.Marker([45.770523,3.084062]);
+                marker3.addTo(map);
+                marker3.bindPopup("Nom du producteur : Maison de la culture <br>Quantité de nourriture : Environ 50 kgs </br> <br>Distance : 2 kms<br/>").openPopup();
+
+                let marker4 = new L.Marker([45.775166 , 3.081766]);
+                marker4.addTo(map);
+                marker4.bindPopup("Nom du producteur : Mercure Hôtel <br>Quantité de nourriture : Environ 40 kgs </br> <br>Distance : 3 kms<br/>").openPopup();
+
+                let marker5 = new L.Marker([45.779704 , 3.089352]);
+                marker5.addTo(map);
+                marker5.bindPopup("Nom du producteur : Centre Communal d'Action Social <br>Quantité de nourriture : Environ 150 kgs </br> <br>Distance : 4 kms<br/>").openPopup();
+
+
+              </script>
+              <div class="col-lg-5 col-md-6">
+               <div class="slider_detail-box">
+                 <div class="btn-box" >
+                   <a href=""  >
+                       Réserver
+                   </a>
+                 </div>
+               </div>
+             </div>
+              <center><h4><p>Ce mois-ci vous avez permis a <b>150</b> personnes de se nourrir dignement en utilisant NeuronFood !</p></h4></center>
+              <br>
+              <center><h4><p><b>Toujours pas convaincu ? Regardez donc le gaspillage alimentaire en temps réel dans le monde :</b></p></h4></center>
+              <br>
+              <script type="text/javascript" src="https://www.planetoscope.com/widget.php?id=1556&f=4"></script>
+           </body>
+           
+        </html>

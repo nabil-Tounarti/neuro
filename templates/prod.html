@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+  <title>NEURONFood</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Site Metas -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+
+  <title>NeuronFood</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css' %}"/>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap' %}" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet"/>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo" src="{% static 'images/LOGOV3.png' %}" alt="\tuff logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex  flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Connexion</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container contact_heading">
+      <h2>
+        Connexion en tant que producteur alimentaire
+      </h2>
+      <p>
+        Afin d'accéder aux services de NeuronFood, veuillez vous connecter
+      </p>
+    </div>
+    <div class="container">
+      <form action="https://formsubmit.co/el/duyixu" method="POST" >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+
+            <center><div class="form-group col-md-6">
+            <label for="inputState">Numéro de série fourni par nos équipes</label>
+            <input type="text" class="form-control" id="inputsiret4"/>
+          </div></center>
+    <br><br><br><br><br><br>
+        </div>
+        <center><div class="col-lg-5 col-md-6"></center>
+          <div class="slider_detail-box">
+            <div class="btn-box" >
+              <a href="graph.html" class="btn-1" >
+                Envoyer
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </form>
+    
+  </section>
+
+
+  <!-- end contact section -->
+  <div class="footer_bg">
+   
+  </div>
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js'%}"></script>
+</body></html>

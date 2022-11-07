@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html><html><head><meta charset="utf-8"/>
+
+  <link href="{% static 'css/style.css'%}" rel="stylesheet"/>
+  <script type="javascript" src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+        <h1 titre1> Charte de prédiction de vente</h1>
+        <div><h4>Selon nos prédictions, vous devriez produire <b>{{rest}} unités</b> aujourd'hui</h4></div>
+        <div><h4>Un collecteur sera prévenu à <b>16h</b> si vous êtes en surproduction</h4></div>
+        <div class="col-lg-5 col-md-6">
+                <div class="slider_detail-box">
+                  <div class="btn-box" >
+                    <a href="index.html" class="btn-1" >
+                      Retour à l'accueil
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+{% block content %}
+
+        <img src="data:image/png;base64,{{chart|safe}}">
+        
+
+{% endblock content %}
+</body>
+
+<body>
+        <div>
+                
+                <div class="container contact_heading">
+                        <br><br>
+                      </div>
+
+                      <div class="container">
+                        <h1>Vous souhaitez être alerté ?</h1> 
+                                </div>
+                                <div class="col-lg-5 col-md-6">
+                                        <div class="slider_detail-box">
+                                          <div class="btn-box" >
+                                            <a href="#"  >
+                                                Prévenez moi s'il y a une détection de surproduction
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-5 col-md-6">
+                                        <div class="slider_detail-box">
+                                          <div class="btn-box" >
+                                                
+                                            <a href="#" >
+                                                        Prévenez moi si je dois faire une promotion sur mon stock
+                                               
+                                                
+                                            </a>
+                                            
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <h5>Vous serez notifié par E-mail !</h5>
+                        </form>
+                      </div>
+                      <br></div>
+
+</body>
+
+
+</html>

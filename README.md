@@ -5,7 +5,7 @@ caritatives à trouver des dons
 Éviter le gaspillage en utilisant le modèle de machine learning "XGBoost".
 L'intégration de ce modèle dans le site
 Outils de développement : Django , Microsoft Visual Studio , Google Colab.
-notre équipe a gagné le prix fonctionnel.
+notre équipe a gagné le prix fonctionnel en Hackathon sopra steria.
 
 https://user-images.githubusercontent.com/117689544/200713074-b623b201-5510-4fef-bdd6-64ae7a989dd7.mp4
 
